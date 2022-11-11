@@ -1,0 +1,21 @@
+.c-cytiva__container {
+    position: relative;
+    z-index: $z-index-default;
+    height: 100vh;
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    max-width: $site-width-max;
+    margin: 0 auto;
+    overflow-x: hidden;
+    
+    @include site-outer-gutter();
+
+    &--no-spacing {
+        padding: 0;
+    }
+    
+    &--hide {
+      display: none;
+      visibility: hidden;
+    }
+}

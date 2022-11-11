@@ -1,0 +1,49 @@
+$device-bps: (
+    'mobile': '(max-width: 767px)',
+    'tablet': '(min-width: 768px) and (max-width: 1367px)',
+    'desktop': '(min-width: 1368px)'
+);
+
+// Use with sizes defined above i.e. @include respond-to(tablet) or @include respond-to(mobile, tablet) etc.
+@mixin respond-to($devices...) {
+    @each $device in $devices {
+        @media #{map-get($device-bps, $device)} {
+            @content;
+        }
+    }
+}
+
+@mixin site-outer-gutter() {
+    padding: 0 $site-outer-gutter-mobile;
+    @include respond-to(tablet) {
+        padding: 0 $site-outer-gutter-tablet;
+    }
+    @include respond-to(desktop) {
+        padding: 0 $site-outer-gutter-desktop;
+    }
+}
+
+@mixin site-inner-gutter() {
+    padding: $site-inner-gutter-mobile $site-inner-gutter-mobile;
+    @include respond-to(tablet) {
+        padding: $site-inner-gutter-tablet $site-inner-gutter-tablet;
+    }
+    @include respond-to(desktop) {
+        padding: $site-inner-gutter-desktop $site-inner-gutter-desktop;
+    }
+}
+
+@mixin align-mid-center($horizontal: true, $vertical: true) {
+    position: absolute;
+    @if ($horizontal and $vertical) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } @else if ($horizontal) {
+        left: 50%;
+        transform: translate(-50%, 0);
+    } @else if ($vertical) {
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}

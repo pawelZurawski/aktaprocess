@@ -1,0 +1,29 @@
+.c-cytiva__webgl {
+  z-index: $z-index-default;
+  border: none;
+  outline: none;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: $webGL-height;
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  display: block
+}
+
+.iframe-motion-left {
+  @extend %shrink-view;
+}
+
+.iframe-motion-right {
+  @extend %expand-view;
+}
+
+// .c-cytiva {
+
+//   &__test-key {
+//     position: absolute;
+//     top: 30%;
+//     left: 10%;
+//   }
+// }

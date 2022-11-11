@@ -1,0 +1,112 @@
+@keyframes show-sidebar-motion {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes hide-sidebar-motion {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes hide-sidebar-motion-mobile {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+        z-index: $z-index-splash;
+    }
+    10% {
+        transform: translateY(-100%);
+        opacity: 0;
+        z-index: $z-index-behind;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+        z-index: $z-index-behind;
+    }
+}
+
+@keyframes show-sidebar-motion-mobile {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    80% {
+        transform: translateY(-20%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        z-index: $z-index-splash;
+    }
+}
+
+%show-sidebar-motion {
+    animation: show-sidebar-motion-mobile $animations-motion-duration ease-in forwards;
+    @include respond-to(tablet, desktop) {
+        animation: show-sidebar-motion $animations-motion-duration ease-in forwards;
+    }
+}
+
+%hide-sidebar-motion {
+    animation: hide-sidebar-motion-mobile $animations-motion-duration-fast ease-out forwards;
+    @include respond-to(tablet, desktop) {
+        animation: hide-sidebar-motion $animations-motion-duration-slow ease-in-out forwards;
+    }
+}
+    
+@keyframes shrink-view {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes expand-view {
+    from {
+        width: 50%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+%expand-view {
+    @include respond-to(tablet, desktop) {
+        animation: expand-view $animations-motion-duration forwards;
+    }
+}
+    
+    %shrink-view {
+    @include respond-to(tablet, desktop) {
+        animation: shrink-view $animations-motion-duration-slow ease-in forwards;
+    }
+}
+
+@keyframes fade-in {
+  from {
+    transform: scale(.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+%fade-in {
+  @include respond-to(tablet, desktop) {
+      animation: fade-in $animations-motion-duration forwards;
+  }
+}

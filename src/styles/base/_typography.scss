@@ -1,0 +1,93 @@
+// Set "font-size" with breakpoint variations.
+// These should be used for "content" elements like spots / article page / news page etc.
+// Example: Bold font: @include typeset(DISPLAY1), Medium font: @include typeset(DISPLAY1, $font-weight-medium)
+// Medium Italic: @include typeset(DISPLAY1, $font-weight-medium, black, $font-family-primary-italic)
+@mixin typeset($type, $font-weight: $font-weight-bold, $font-type: $font-family-primary, $color: $color-native-black) {
+    @if ($type == DISPLAY1) {
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: $color-native-black;
+        font-family: $font-type;
+        font-weight: $font-weight;
+        font-size: $font-size-36;
+        line-height: $line-height-45;
+        color: $color;
+        @include respond-to(tablet, desktop) {
+            font-size: $font-size-40;
+            line-height: $line-height-50;
+        }
+    } @else if ($type == DISPLAY2) {
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: $color-native-black;
+        font-family: $font-type;
+        font-weight: $font-weight;
+        font-size: $font-size-28;
+        line-height: $line-height-35;
+        color: $color;
+        @include respond-to(tablet, desktop) {
+            font-size: $font-size-32;
+            line-height: $line-height-40;
+        }
+    } @else if ($type == DISPLAY3) {
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: $color-native-black;
+        font-family: $font-type;
+        font-weight: $font-weight;
+        font-size: $font-size-24;
+        line-height: $line-height-30;
+        color: $color;
+        @include respond-to(tablet, desktop) {
+            font-size: $font-size-28;
+            line-height: $line-height-35;
+        }
+    } @else if ($type == DISPLAY4) {
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: $color-native-black;
+        font-family: $font-type;
+        font-weight: $font-weight;
+        font-size: $font-size-20;
+        line-height: $line-height-25;
+        color: $color;
+        @include respond-to(tablet, desktop) {
+            font-size: $font-size-22;
+            line-height: $line-height-30;
+        }
+    } @else if ($type == DISPLAY5) {
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: $color-native-black;
+        font-family: $font-type;
+        font-weight: $font-weight;
+        font-size: $font-size-18;
+        line-height: $line-height-22;
+        color: $color;
+        @include respond-to(tablet, desktop) {
+            font-size: $font-size-19;
+            line-height: $line-height-27;
+        }
+    } @else if ($type == SMALL) {
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: $color-native-black;
+        font-family: $font-type;
+        font-weight: $font-weight;
+        font-size: $font-size-14;
+        line-height: $line-height-20;
+        color: $color;
+        @include respond-to(tablet, desktop) {
+            font-size: $font-size-15;
+            line-height: $line-height-25;
+        } 
+    } @else if ($type == LIGHT) {
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: $color-native-black;
+        font-family: $font-type;
+        font-weight: $font-weight;
+        font-size: $font-size-14;
+        line-height: $line-height-20;
+        color: $color;
+        @include respond-to(tablet, desktop) {
+            font-size: $font-size-15;
+            line-height: $line-height-20;
+        }
+    } @else {
+        @error "Typeset: " + $type + " is not valid";
+    }
+}

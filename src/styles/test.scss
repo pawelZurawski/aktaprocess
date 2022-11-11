@@ -1,0 +1,121 @@
+@import '../index.scss';
+
+.cytiva-display1 {
+    @include typeset(DISPLAY1);
+}
+
+.cytiva-display1-italic {
+    @include typeset(DISPLAY1, $font-weight-bold ,$font-family-primary-italic, $color-green-primary);
+}
+
+.cytiva-display2 {
+    @include typeset(DISPLAY2);
+}
+
+.cytiva-display2-italic {
+    @include typeset(DISPLAY2, $font-weight-bold, $font-family-primary-italic, $color-green-primary);
+}
+
+.cytiva-display3 {
+    @include typeset(DISPLAY3);
+}
+
+.cytiva-display3-italic {
+    @include typeset(DISPLAY3, $font-weight-bold, $font-family-primary-italic, $color-green-primary);
+}
+
+.cytiva-display4 {
+    @include typeset(DISPLAY4);
+}
+
+.cytiva-display4-italic {
+    @include typeset(DISPLAY4, $font-weight-bold, $font-family-primary-italic, $color-green-primary);
+}
+
+.cytiva-display5 {
+    @include typeset(DISPLAY5);
+}
+
+.cytiva-display5-italic {
+    @include typeset(DISPLAY5, $font-weight-bold, $font-family-primary-italic, $color-green-primary);
+}
+
+.cytiva-medium1 {
+    @include typeset(DISPLAY1, $font-weight-medium);
+}
+
+.cytiva-medium1-italic {
+    @include typeset(DISPLAY1, $font-weight-medium, $font-family-primary-italic, $color-green-primary);
+}
+
+.cytiva-medium2 {
+    @include typeset(DISPLAY2, $font-weight-medium);
+}
+
+.cytiva-medium2-italic {
+    @include typeset(DISPLAY2, $font-weight-medium, $font-family-primary-italic, $color-green-primary);
+}
+
+.cytiva-medium3 {
+    @include typeset(DISPLAY3, $font-weight-medium);
+}
+
+.cytiva-medium3-italic {
+    @include typeset(DISPLAY3, $font-weight-medium, $font-family-primary-italic, $color-green-primary);
+}
+
+.cytiva-medium4 {
+    @include typeset(DISPLAY4, $font-weight-medium);
+}
+
+.cytiva-medium4-italic {
+    @include typeset(DISPLAY4, $font-weight-medium, $font-family-primary-italic, $color-green-primary);
+}
+
+.cytiva-medium5 {
+    @include typeset(DISPLAY5, $font-weight-medium);
+}
+
+.cytiva-medium5-italic {
+    @include typeset(DISPLAY5, $font-weight-medium, $font-family-primary-italic, $color-green-primary);
+}
+
+.cytiva-regular1 {
+    @include typeset(DISPLAY1, $font-weight-regular);
+}
+
+.cytiva-regular2 {
+    @include typeset(DISPLAY2, $font-weight-regular);
+}
+
+.cytiva-regular3 {
+    @include typeset(DISPLAY3, $font-weight-regular);
+}
+
+.cytiva-regular4 {
+    @include typeset(DISPLAY4, $font-weight-regular);
+}
+
+.cytiva-regular5 {
+    @include typeset(DISPLAY5, $font-weight-regular);
+}
+
+.cytiva-italic1 {
+    @include typeset(DISPLAY1, $font-weight-regular, $font-family-primary-italic, $color-green-primary);
+}
+
+.cytiva-italic2 {
+    @include typeset(DISPLAY2, $font-weight-regular, $font-family-primary-italic, $color-green-primary);
+}
+
+.cytiva-italic3 {
+    @include typeset(DISPLAY3, $font-weight-regular, $font-family-primary-italic, $color-green-primary);
+}
+
+.cytiva-italic4 {
+    @include typeset(DISPLAY4, $font-weight-regular, $font-family-primary-italic, $color-green-primary);
+}
+
+.cytiva-italic5 {
+    @include typeset(DISPLAY5, $font-weight-regular, $font-family-primary-italic, $color-green-primary);
+}

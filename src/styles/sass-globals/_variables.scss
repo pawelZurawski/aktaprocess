@@ -1,0 +1,196 @@
+/*
+ * Globally available variables. Local vars should be defined in the individual _partials.
+ */
+
+/****************** FONT VARS *******************/
+
+// Families
+$font-family-primary: 'Cytiva Aktiv', Arial , sans-serif !default;
+$font-family-primary-italic: 'Cytiva Aktiv Italic', Arial, sans-serif !default;
+
+// Weights
+$font-weight-thin: 200;
+$font-weight-light: 300;
+$font-weight-regular: normal;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: bold;
+
+// Sizes
+$font-size-8: 8px !default;
+$font-size-9: 9px !default;
+$font-size-10: 10px !default;
+$font-size-11: 11px !default;
+$font-size-12: 12px !default;
+$font-size-13: 13px !default;
+$font-size-14: 14px !default;
+$font-size-15: 15px !default;
+$font-size-16: 16px !default; /* Equivalent to 100 % */
+$font-size-18: 18px !default;
+$font-size-19: 19px !default;
+$font-size-20: 20px !default;
+$font-size-22: 22px !default;
+$font-size-24: 24px !default;
+$font-size-28: 28px !default;
+$font-size-32: 32px !default;
+$font-size-34: 34px !default;
+$font-size-36: 36px !default;
+$font-size-40: 40px !default;
+
+// Line heights
+$line-height-10: 10px !default;
+$line-height-11: 11px !default;
+$line-height-12: 12px !default;
+$line-height-14: 14px !default;
+$line-height-16: 16px !default;
+$line-height-17: 17px !default;
+$line-height-18: 18px !default;
+$line-height-20: 20px !default;
+$line-height-22: 22px !default;
+$line-height-24: 24px !default;
+$line-height-25: 25px !default;
+$line-height-27: 27px !default;
+$line-height-28: 28px !default;
+$line-height-30: 30px !default;
+$line-height-35: 35px !default;
+$line-height-40: 40px !default;
+$line-height-45: 45px !default;
+$line-height-50: 50px !default;
+
+/****************** COLOR VARS *******************/
+// Native colors
+$color-native-black: #000000 !default;
+$color-native-white: #ffffff !default;
+
+// Primary colors
+$color-primary-black: #1c1c28 !default;
+$color-primary-white: #ffffff !default;
+
+// Accent colors
+$color-green-primary: #00886f !default;
+$color-green-secondary: #00876f !default;
+$color-green-tertiary: #00755f !default;
+
+// Playful colors
+$color-green-success: #39d98a !default;
+$color-orange-warning: #fdac42 !default;
+$color-red-danger: #ff5c5c !default;
+
+// Neutrals colors
+$color-grey-60: #929192 !default;
+$color-grey-50: #aeaeaf !default;
+$color-grey-40: #d1d2d4 !default;
+$color-grey-30: #e2e2e4 !default;
+$color-grey-20: #f1f1f2 !default;
+$color-grey-10: #f7f7f8 !default;
+$color-grey: #fafafc !default;
+
+// Usage-specific colors
+$color-disabled: $color-grey-30 !default;
+$color-disabled-text: $color-grey-50 !default;
+
+// Theme colors
+:root {
+    --theme-color-main-text: #1c1c28;
+    --theme-color-main-bg: #ffffff;
+}
+
+$theme-color-main-text: var(--theme-color-main-text);
+$theme-color-main-bg: var(--theme-color-main-bg);
+
+// Box Shadows
+$box-shadow-primary: 0 0 0 1px $color-green-primary inset;
+$box-shadow: 0 0 14px -10px rgba(0, 0, 0, 0.5);
+$box-shadow-hover: 0 0 20px -10px rgba(0, 0, 0, 0.5);
+
+// Content cut-off widths
+$site-width-min: 320px;
+$site-width-max: 1920px;
+
+/****************** TRANSITION VARS *******************/
+
+// Durations
+$transition-duration-fast: 300ms;
+$transition-duration: 550ms;
+$transition-duration-slow: 700ms;
+
+// Timings
+$transition-timing: cubic-bezier(0.35, 0, 0.15, 1);
+
+// Animations
+$animations-motion-duration-fast: $transition-duration-fast;
+$animations-motion-duration: $transition-duration;
+$animations-motion-duration-slow: $transition-duration-slow;
+
+// ****************** Gutter spacing *******************/
+$site-outer-gutter-mobile: 10px;
+$site-outer-gutter-tablet: 20px;
+$site-outer-gutter-desktop: 30px;
+
+$site-inner-gutter-mobile: 30px;
+$site-inner-gutter-tablet: 40px;
+$site-inner-gutter-desktop: 50px;
+
+// Element vertical distance (space between spots)
+$site-box-spacing-1: 1px;
+$site-box-spacing-2: 2px;
+$site-box-spacing-4: 4px;
+$site-box-spacing-5: 5px;
+$site-box-spacing-8: 8px;
+$site-box-spacing-10: 10px;
+$site-box-spacing-15: 15px;
+$site-box-spacing-20: 20px;
+$site-box-spacing-25: 25px;
+$site-box-spacing-30: 30px;
+$site-box-spacing-35: 35px;
+$site-box-spacing-40: 40px;
+$site-box-spacing-50: 50px;
+
+/****************** Z-INDEX VARS *******************/
+
+$z-index-under: -9;
+$z-index-behind: -1;
+$z-index-default: 0;
+$z-index-splash: 1;
+$z-index-mega-menu: 9;
+$z-index-main-menu: 9 + 1;
+$z-index-hover: 99;
+$z-index-overlay: 999;
+$z-index-modal: 9999;
+
+/***************** Components variables **********************/
+
+/*** webGL component ***/
+$body-height: 100vh;
+$webGL-height: 100vh;
+
+/*** button component ***/
+$button-color-green: $color-green-primary;
+$button-color-green-border: $color-green-secondary;
+$button-color-green-hover: $color-green-tertiary;
+$button-color-white-text: $color-primary-white;
+$button-color-black-text: $color-primary-black;
+$button-color-inactive: $color-grey-50;
+$button-color-inactive-text: $color-grey-10;
+$button-color-black-shadow: $color-grey-30;
+
+$button-padding: $site-box-spacing-25;
+$button-padding-mobile: $site-box-spacing-10;
+
+$button-min-width-large: 70px;
+$button-min-width-small: 60px;
+$button-min-height-large: 25px;
+$button-min-height-small: 20px;
+
+$button-primary-box-shadow: $box-shadow-primary;
+$button-black-box-shadow: $button-color-black-shadow 0 2px 11px -5px;;
+
+$button-fixwidth-mobile: 130px;
+$button-fixwidth: 220px;
+
+$svg-size-10: 10px;
+$svg-size-12: 12px;
+$svg-size-15: 15px;
+
+//*** Links ***//
+$bottom-links-spacing: $site-box-spacing-25;

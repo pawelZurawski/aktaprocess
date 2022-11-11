@@ -1,0 +1,114 @@
+$hamburger-menu-width: $site-box-spacing-35;
+$hamburger-menu-height: $site-box-spacing-25;
+$hamburger-menu-icon-height: $site-box-spacing-4;
+
+.c-cytiva__hamburger-menu {
+  position: absolute;
+  top: $site-box-spacing-20;
+  right: $site-box-spacing-30;
+  z-index: 4 !important;
+
+  @include respond-to(tablet, desktop) {
+    display: none;
+  }
+
+  &__input {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .top-line--active {
+    top: #{($hamburger-menu-height / 2) - ($hamburger-menu-icon-height / 2)};;
+    transform: rotate(45deg);
+    background-color: $color-native-white;
+  }
+  
+  .mid-line--active {
+    transform: scale(0);
+  }
+  
+  .bottom-line--active {
+    top: #{($hamburger-menu-height / 2) - ($hamburger-menu-icon-height / 2)};;
+    transform: rotate(-45deg) !important;
+    background-color: $color-native-white;
+  }
+
+  &__label {
+    position: relative;
+    width: $hamburger-menu-width;
+    height: $hamburger-menu-height;
+    display: block;
+    cursor: pointer;
+  }
+
+  &__icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    background-color: $color-green-primary;
+    width: $hamburger-menu-width;
+    height: $hamburger-menu-icon-height;
+    transition: all 0.2s ease-in-out;
+  }
+
+    .top-line {
+    top: 0;
+  }
+  
+  .mid-line {
+    top: #{($hamburger-menu-height / 2) - ($hamburger-menu-icon-height / 2)};
+
+  }
+
+    .bottom-line {
+    bottom: 0;
+  }
+}
+
+.c-cytiva__nav {
+  @include respond-to(mobile) {
+    top: 0 !important;
+    z-index: 1;
+  }
+}
+
+.c-cytiva__nav-list {
+  @include respond-to(mobile) {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+
+    button {
+      display: none;
+    }
+  }
+}
+
+.c-cytiva__nav-list__dropdown--active {
+  @include respond-to(mobile) {
+    position: relative !important;
+    transition: all .4s ease-in-out;
+    z-index: 3 !important;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+    margin-right: $site-box-spacing-20;
+    background-color: $color-green-primary;
+    padding: 60px 20px 20px 0;
+  
+    button {
+      display: block;
+      color: white !important;
+      font-size: 16px;
+      background-color: transparent ;
+      width: 200px;
+      text-align: right;
+      height: 30px;
+      transition: all .1s ease-in;
+    }
+  }
+}

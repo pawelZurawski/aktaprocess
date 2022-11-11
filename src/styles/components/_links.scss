@@ -1,0 +1,52 @@
+.c-cytiva {
+
+  &__nav {
+    width: 100%;
+    @include align-mid-center(true, false);
+    @extend %top-navbar-spacing;
+  }
+
+  &__nav-list {
+      display: flex;
+      flex-wrap: wrap;
+      @include respond-to(tablet, desktop) {
+          justify-content: center;
+      }
+
+      &__item {
+          margin: 0 $site-box-spacing-10 $site-box-spacing-10 $site-box-spacing-10;
+      }
+  }
+
+  &__sub {
+    @include align-mid-center(false, true);
+    @extend %left-sublinks-spacing;
+  }
+
+  &__sub-list {
+
+      &__item {
+          margin: $site-box-spacing-20 0;
+      }
+  }
+
+  &__exit-btn {
+    position: absolute;
+    @extend %left-sublinks-spacing;
+    bottom: $bottom-links-spacing;
+  }
+}
+
+%top-navbar-spacing {
+  top: $site-box-spacing-30;
+  @include respond-to(mobile) {
+    top: $site-box-spacing-15;
+  }
+}
+
+%left-sublinks-spacing {
+  left: $site-box-spacing-30;
+    @include respond-to(mobile) {
+      left: $site-box-spacing-10;
+  }
+}

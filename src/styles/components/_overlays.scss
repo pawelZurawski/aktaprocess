@@ -1,0 +1,120 @@
+.c-cytiva {
+
+  &__overlay {
+    position: absolute;
+    display: flex;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: rgba($color-primary-black, .6);
+
+    @extend %fade-in;
+  }
+  
+  &__trademark-section, &__help-section {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba($color-green-primary, .9);
+    padding: $site-box-spacing-20;
+
+  }
+
+  &__trademark-top, &__help-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $site-box-spacing-5;
+  
+    &__close {
+      margin-left: auto;
+      font-size: 22px;
+      font-weight: 600;
+      color: $color-native-white;
+      transition: all $transition-duration;
+  
+      &:hover {
+        color: rgba($color-native-white, .7)
+      }
+    }
+  
+    // &__logo {
+    // }
+  }
+  
+  &__trademark-text {
+    @include typeset(DISPLAY5, $font-weight-regular, $font-family-primary, $color-native-white);
+  }
+  
+  &__trademark-icon, &__help-icon {
+    position: absolute;
+    bottom: $bottom-links-spacing;
+    z-index: 0;
+    padding-left: $button-padding-mobile;
+    padding-right: $button-padding-mobile;
+  }
+
+  &__trademark-icon {
+    right: 80px;
+  }
+
+
+  &__help-icon {
+    right: 25px;
+  }
+
+  &__subtext {
+    @include typeset(DISPLAY5, $font-weight-regular, $font-family-primary, $color-native-white);
+  }
+
+  &__text {
+    @include typeset(LIGHT, $font-weight-light, $font-family-primary, $color-native-white);
+  }
+
+  &__help-row {
+    display: flex;
+    padding-bottom: $site-box-spacing-5;
+
+    &__left {
+      min-width: 120px;
+    }
+  }
+
+  &__help-svg-icon {
+    width: 25px;
+    height: 25px;
+    fill: $color-native-white;
+  }
+
+  &__help-navigation {
+    display: flex;
+
+
+    &__section {
+      display: flex;
+      flex-direction: column;   
+      text-align: center;
+      align-items: center;  
+      padding: 0 1px; 
+    }
+
+    &__content {
+      margin-top: $site-box-spacing-10;
+    }
+  }
+
+  &__kbd {
+    background-color: $color-native-white;
+    color: $color-native-black;
+    padding: $site-box-spacing-1 $site-box-spacing-5;
+    border-radius: $site-box-spacing-2;
+  }
+
+  &__bottom-section {
+    margin-bottom: $site-box-spacing-5;
+  }
+}
