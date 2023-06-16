@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9623600d.css",
+    "main.js": "/static/js/main.0eff13fd.js",
+    "static/js/787.0c5a478c.chunk.js": "/static/js/787.0c5a478c.chunk.js",
+    "static/media/Recure_10mm_PP_Right_ILD.png": "/static/media/Recure_10mm_PP_Right_ILD.af431be81e79e73baa2f.png",
+    "static/media/Recure20mm_Right.png": "/static/media/Recure20mm_Right.4596a5070a968dcb4270.png",
+    "static/media/vlcsnap.png": "/static/media/vlcsnap.085401489e0b7a765133.png",
+    "static/media/Recure_05in_SS_LeftPersp.png": "/static/media/Recure_05in_SS_LeftPersp.c2511947c53ad8362249.png",
+    "static/media/akta-avant.png": "/static/media/akta-avant.f33267e0d8ba1f0ab43b.png",
+    "static/media/Recure_05in_SS_Right.png": "/static/media/Recure_05in_SS_Right.192769185c6b737245ab.png",
+    "static/media/uv-sensor.png": "/static/media/uv-sensor.6478666141d7627f5479.png",
+    "static/media/pump_flow_meter.jpg": "/static/media/pump_flow_meter.b17f8c7e579f7b44d4ee.jpg",
+    "static/media/CytivaAktiv_W_Rg.woff": "/static/media/CytivaAktiv_W_Rg.af1c419f90e2ba65582d.woff",
+    "static/media/CytivaAktiv_W_Bd.woff": "/static/media/CytivaAktiv_W_Bd.33e8432522a52de10c6c.woff",
+    "static/media/CytivaAktiv_W_Rg.woff2": "/static/media/CytivaAktiv_W_Rg.fbc22c7e417102140319.woff2",
+    "static/media/CytivaAktiv_W_MdIt.woff": "/static/media/CytivaAktiv_W_MdIt.24c1c4934f63747ef2e5.woff",
+    "static/media/CytivaAktiv_W_BdIt.woff": "/static/media/CytivaAktiv_W_BdIt.1ca4c75ccb07e9b898ad.woff",
+    "static/media/CytivaAktiv_W_Bd.woff2": "/static/media/CytivaAktiv_W_Bd.5e4425988263bcef75a4.woff2",
+    "static/media/CytivaAktiv_W_Md.woff": "/static/media/CytivaAktiv_W_Md.cc0ca69a7aaa35964c8d.woff",
+    "static/media/CytivaAktiv_W_It.woff": "/static/media/CytivaAktiv_W_It.a6052f2591647fb423e5.woff",
+    "static/media/CytivaAktiv_W_MdIt.woff2": "/static/media/CytivaAktiv_W_MdIt.62d38802452b94980364.woff2",
+    "static/media/CytivaAktiv_W_BdIt.woff2": "/static/media/CytivaAktiv_W_BdIt.e2c1553608d8ff3ec187.woff2",
+    "static/media/offline_calibration.png": "/static/media/offline_calibration.611158e056822f71d24a.png",
+    "static/media/CytivaAktiv_W_Md.woff2": "/static/media/CytivaAktiv_W_Md.51d8581b9027095db741.woff2",
+    "static/media/CytivaAktiv_W_It.woff2": "/static/media/CytivaAktiv_W_It.97daa5a4cd1666c0330d.woff2",
+    "static/media/remote_access.png": "/static/media/remote_access.6b9f3aca3d7cd07450b0.png",
+    "static/media/Industrial_mouse.jpg": "/static/media/Industrial_mouse.5fbc06feb88b15b71929.jpg",
+    "static/media/25948_50054_low_replace.jpg": "/static/media/25948_50054_low_replace.bf38f32900d9cb6a4245.jpg",
+    "static/media/cytiva.svg": "/static/media/cytiva.7ed3dc9f350f8dc6be0d8ec64abbed7e.svg",
+    "index.html": "/index.html",
+    "main.9623600d.css.map": "/static/css/main.9623600d.css.map",
+    "main.0eff13fd.js.map": "/static/js/main.0eff13fd.js.map",
+    "787.0c5a478c.chunk.js.map": "/static/js/787.0c5a478c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9623600d.css",
+    "static/js/main.0eff13fd.js"
+  ]
+}
